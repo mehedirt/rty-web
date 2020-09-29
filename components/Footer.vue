@@ -1,5 +1,5 @@
 <template>
-  <div class="footerBg">
+  <div class="footerBg bgColorLight">
     <div class>
       <b-container fluid="sm">
         <b-row>
@@ -58,8 +58,7 @@ export default {
 
 <style scoped>
 .footerBg {
-  background: #252525;
-  padding: 70px 0px;
+  padding: 70px 0px 30px;
 }
 .aboutSoft p{
   font-size: 18px;

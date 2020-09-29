@@ -9,10 +9,10 @@
 import AboutHeader from '@/components/About/AboutHeader';
 import AboutBody from '@/components/About/AboutBody';
 import aboutImage from "@/assets/images/about-us.jpeg";
-import heroImage from "@/assets/images/contact111.jpg";
+import heroImage from "@/assets/images/header2.jpeg";
 export default {
   components: {
-      AboutHeader,
+      AboutHeader, 
       AboutBody
     },
     asyncData(){

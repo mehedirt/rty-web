@@ -3,17 +3,33 @@
     <div class>
       <b-container fluid="sm">
         <div class="text-center hedlineContent pb-5">
-          <h1>Our Works</h1>
-          <p>Some examples of the web design and development projects we are grateful to have been a part of. Contact us to learn more about our projects.</p>
+          <h2>Our Works</h2>
+          <p>
+            Some examples of the web design and development projects we are
+            grateful to have been a part of. Contact us to learn more about our
+            projects.
+          </p>
         </div>
         <b-row>
-          <b-col v-for="(work,index) in workData" :key="index" class="pb-4" md="6" lg="4">
+          <b-col
+            v-for="(work, index) in workData"
+            :key="index"
+            class="pb-4"
+            md="6"
+            lg="4"
+          >
             <div class="pb-4">
-              <b-img class :src="work.image" rounded fluid alt="Fluid image"></b-img>
+              <b-img
+                class
+                :src="work.image"
+                rounded
+                fluid
+                alt="Fluid image"
+              ></b-img>
             </div>
             <div class="workContent">
-              <h4>{{work.title}}</h4>
-              <p>{{work.description}}</p>
+              <h4>{{ work.title }}</h4>
+              <p>{{ work.description }}</p>
             </div>
           </b-col>
         </b-row>
@@ -77,16 +93,15 @@ export default {
 .ourWork {
   padding: 70px 0px;
 }
-.workContent{
+.workContent {
   text-align: center;
 }
 
-.workContent h4{
+.workContent h4 {
   margin-bottom: 20px;
 }
-.workContent p{
-   margin-bottom: 20px;
+.workContent p {
+  margin-bottom: 20px;
   font-size: 18px;
 }
-
 </style>

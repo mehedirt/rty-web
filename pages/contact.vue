@@ -1,6 +1,6 @@
 <template>
   <div>
-      <ContactHeader :hero-image="heroImage"/>
+      <ContactHeader :contact-image="headerImage"/>
       <ContactBody/>
   </div>
 </template>
@@ -8,7 +8,7 @@
 <script>
 import ContactHeader from '@/components/Contact/ContactHeader';
 import ContactBody from '@/components/Contact/ContactBody';
-import heroImage from "@/assets/images/contact111.jpg";
+import topImage from "@/assets/images/header2.jpeg";
 export default {
   components: {
       ContactHeader,
@@ -16,7 +16,7 @@ export default {
     },
     asyncData(){
       return  {   
-        heroImage: heroImage,
+        headerImage: topImage,
       }
     }
 }

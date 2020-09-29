@@ -1,8 +1,8 @@
 <template>
-  <div class="ourClint">
+  <div class="ourClint bgColorDark">
     <b-container fluid="sm">
       <div class="text-center hedlineContent pb-5">
-        <h1>Happy Clients</h1>
+        <h2>Happy Clients</h2>
       </div>
       <carousel :responsive="{0:{items:1},768:{items:2}}" :autoplay="true" :dots="false" :margin="10" :nav="false">
         <div
@@ -58,11 +58,7 @@ export default {
 
 <style  scoped>
 .ourClint {
-  background: #ebf8fd;
   padding: 70px 0px;
-}
-.hedlineContent h1 {
-  font-size: 48px;
 }
 .carouselContent{
   position: relative;
