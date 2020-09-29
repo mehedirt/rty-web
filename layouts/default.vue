@@ -1,19 +1,18 @@
 <template>
   <div>
-    <HeaderComponent/>
+    <Header/>
     <Nuxt />
     <Footer/>
   </div>
 </template>
 
 <script type="text/javascript">
-  import HeaderComponent from '@/components/HeaderComponent';
-  
+  import Header from '@/components/Header';
   import Footer from '@/components/Footer';
 
   export default {
     components: {
-      HeaderComponent,
+      Header,
       Footer
     },
   }

@@ -5,47 +5,28 @@
         <b-container fluid>
           <b-row wrap>
             <b-col md="12" lg="7">
-              <div class="heroHeading d-none d-md-block">
-                <h1 class="text-light text-capitalize">Simple Solution for your complex ideas...</h1>
+              <div class="heroHeading">
+                <h1 class="text-light text-capitalize">Simple Solution <br> for your complex ideas...</h1>
                 <p
                   class="text-light"
                 >SoftLabNewyork, a Group of Dynamic and Excellent Team of Web, Mobile App, Software Developers, Strategic Consultants, Marketing Advisors sits together and discusses your business growth on a Technological Platform to maximize your expectations above and beyond.</p>
               </div>
             </b-col>
             <b-col md="12" lg="5">
-              <div class="d-flex justify-content-center justify-content-lg-end">
-                <b-card class="consutationStyle text-center">
-                  <h2 class="font-weight-bold text-light">GET A FREE</h2>
-                  <h3 class="text-light">CONSULTATION</h3>
+              <div class="d-flex justify-content-center justify-content-lg-end mb-3">
+                <b-card class="consutationStyle text-center ">
+                  <h2 class="text-light">GET A FREE</h2>
+                  <h5 class="text-light">CONSULTATION</h5>
                   <div class="input-group flex-nowrap mt-4">
                     <div class="w-100">
-                      <input
-                        type="text"
-                        class="form-control inputStyle mb-3"
-                        placeholder="User name"
-                        aria-label="Username"
-                        aria-describedby="addon-wrapping"
-                      />
-                      <input
-                        type="text"
-                        class="form-control inputStyle mb-3"
-                        placeholder="Email Address"
-                        aria-label="Emailaddress"
-                        aria-describedby="addon-wrapping"
-                      />
-                      <input
-                        type="text"
-                        class="form-control inputStyle mb-3"
-                        placeholder="Phone Number"
-                        aria-label="Phonenumber"
-                        aria-describedby="addon-wrapping"
-                      />
+                      <b-form-input class="mb-3 inputStyle" placeholder="Your Name"  size="lg"></b-form-input>
+                      <b-form-input class="mb-3 inputStyle" placeholder="Email Address"  size="lg"></b-form-input>
+                      <b-form-input class="mb-3 inputStyle" placeholder="Phone Number"  size="lg"></b-form-input>
                     </div>
                   </div>
                   <b-button
-                    class="py-3 font-weight-bold text-uppercase"
+                    class="py-3 text-uppercase getBtn"
                     block
-                    variant="primary"
                     squared
                   >Get Started</b-button>
                 </b-card>
@@ -59,7 +40,7 @@
 </template>  
 
 <script type="text/javascript">
-import heroImage from "@/assets/images/ban6.jpeg";
+import heroImage from "@/assets/images/heroBg12.jpeg";
 export default {
   data: () => ({
     heroImage: heroImage,
@@ -92,14 +73,21 @@ export default {
   font-size: 28px;
   line-height: 36px;
 }
+.getBtn{
+  background: rgba(000, 000, 000, 0.4);
+      font-size: 1.25rem;
+}
 
 .inputStyle {
   border-radius: 0;
-  padding: 30px 10px;
+  background: rgba(000, 000, 000, 0.4);
+  color:white;
+  padding: 2rem 1rem;
+
 }
 ::placeholder {
-  color: black;
-  font-weight: 500;
+  color: white;
+  /* font-weight: 500; */
   text-transform: uppercase;
 }
 .consutationStyle {
@@ -112,7 +100,19 @@ export default {
   min-height: 650px;
 }
   .heroContent {
-  padding: 180px 0px 0px 0px;
+  padding: 180px 0px 0px 0px ;
+}
+.heroHeading {
+    padding: 0px 0px 0px 0px;
+}
+.heroHeading h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.heroHeading p {
+  font-size: 18px;
+  line-height: 32px;
 }
 .consutationStyle {
   width: 100%;
@@ -134,7 +134,9 @@ export default {
   font-size: 20px;
   line-height: 28px;
 }
-
+.consutationStyle {
+    width: 100%;
+  }
 }
 
 
@@ -146,12 +148,12 @@ export default {
     padding: 0 !important;
   }
   .heroHeading h1 {
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 38px;
+    font-weight: 400;
     line-height: 1.3em;
   }
   .heroHeading p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
   }
   .consutationStyle {
@@ -172,7 +174,7 @@ export default {
   }
   .heroHeading p {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 36px;
   }
   .consutationStyle {
     width: 100%;

@@ -11,7 +11,7 @@
             <div class="pb-4">
               <b-img class :src="work.image" rounded fluid alt="Fluid image"></b-img>
             </div>
-            <div class="text-center">
+            <div class="workContent">
               <h4>{{work.title}}</h4>
               <p>{{work.description}}</p>
             </div>
@@ -77,10 +77,16 @@ export default {
 .ourWork {
   padding: 70px 0px;
 }
-.hedlineContent h1 {
-  font-size: 48px;
+.workContent{
+  text-align: center;
 }
-.hedlineContent p {
-  font-size: 25px;
+
+.workContent h4{
+  margin-bottom: 20px;
 }
+.workContent p{
+   margin-bottom: 20px;
+  font-size: 18px;
+}
+
 </style>
