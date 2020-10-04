@@ -13,14 +13,14 @@ import HeroSection from '@/components/HeroSection';
 import OurService from '@/components/OurService';
 import OurWork from '@/components/OurWork';
 import OurClient from '@/components/OurClient';
-import Pricing from '@/components/Pricing'
+import Pricing from '@/components/Pricing';
 export default {
   components: {
       HeroSection,
       OurService,
       OurWork,
       OurClient,
-      Pricing
+      Pricing,
     },
 }
 </script>

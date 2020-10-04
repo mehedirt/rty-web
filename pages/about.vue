@@ -9,7 +9,7 @@
 import AboutHeader from '@/components/About/AboutHeader';
 import AboutBody from '@/components/About/AboutBody';
 import aboutImage from "@/assets/images/about-us.jpeg";
-import heroImage from "@/assets/images/header2.jpeg";
+import heroImage from "@/assets/images/banner2.png";
 export default {
   components: {
       AboutHeader, 

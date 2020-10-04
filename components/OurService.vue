@@ -1,18 +1,18 @@
 <template>
   <div class="ourService bgColorDark">
       <b-container fluid="sm">
-        <div class="text-center hedlineContent pb-5">
+        <div data-aos="fade-up" class="text-center hedlineContent pb-5">
           <h2>Our Services</h2>
           <p>Whether you’re in need of a website, mobile app or graphic design, Queens Web Design has all of your web and digital creative needs covered.</p>
         </div>
         <b-row class="justify-content-center no-gutters">
-          <b-col v-for="(service,index) in serviceData" :key="index" class="p-1 " md="6" lg="4">
+          <b-col data-aos="fade-up" v-for="(service,index) in serviceData" :key="index" class="p-1 " md="6" lg="4">
               <div class="serviceContent">
                 <b-img style="height: 120px;" class="my-4" :src="service.icon"   fluid alt="Responsive image"></b-img>
               <!-- <i :class="service.icon" class="display-2"></i> -->
               <h4>{{service.title}}</h4>
               <p>{{service.description}}</p>
-              <b-button class="" squared variant="outline-secondary" to="/getting-started">Get a FREE Quate</b-button>
+              <b-button class="quateBtn" squared variant="outline" to="/getting-started">Get a FREE Quate</b-button>
               </div>
               
           </b-col>
@@ -77,13 +77,24 @@ export default {
   padding: 16px 8px 24px 8px;
   text-align: center;
   height: 100%;
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
 }
 .serviceContent h4{
   margin-bottom: 20px;
+  color: #056676;
+  font-weight: 600;
 }
 .serviceContent p{
   margin-bottom: 20px;
   font-size: 18px;
+}
+.quateBtn{
+  border-color: #056676;
+  color: black;
+  font-weight: 500;
+}
+.quateBtn:hover{
+  background: #056676;
+  color: white;
 }
 </style>

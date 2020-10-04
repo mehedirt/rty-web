@@ -1,16 +1,19 @@
 <template>
   <div>
     <div class="heroNav">
-      <b-navbar toggleable="lg" class="navBarStyle" :class="[isNavFixed ? 'fixed': '']">
+      <b-navbar
+        toggleable="lg"
+        class="navBarStyle"
+        :class="[isNavFixed ? 'fixed' : '']"
+      >
         <!-- <span></span> -->
         <b-navbar-brand class="mr-0" href="#">
           <div class="text-light text-center">
-              <h2>SoftLab.NY</h2>
+            <h2>SoftLab.NY</h2>
           </div>
           <div class="contactNumber d-block d-lg-none">
-                  <span>017-1729-5256</span>
-                </div>
-
+            <span>017-1729-5256</span>
+          </div>
         </b-navbar-brand>
         <span class="d-lg-none toggleIconStyle" @click="showToggleNavbar">
           <i class="fas fa-bars toggleIcon pr-3"></i>
@@ -23,26 +26,26 @@
             :style="toggle ? 'display: block' : 'display: none'"
           >
             <b-navbar-nav class="mx-auto">
-              <b-nav-item>
+              <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">HOME</nuxt-link>
               </b-nav-item>
-              <b-nav-item>
+              <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/about">ABOUT</nuxt-link>
               </b-nav-item>
-              <b-nav-item>
+              <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">PORTFOLIO</nuxt-link>
               </b-nav-item>
-              <b-nav-item>
+              <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">BLOG</nuxt-link>
               </b-nav-item>
-              <b-nav-item>
+              <b-nav-item class="menuItemStyle menuItemStyle2">
                 <nuxt-link class="menuItem" to="/contact">CONTACT</nuxt-link>
               </b-nav-item>
             </b-navbar-nav>
             <b-navbar-brand href="#" class="d-none d-lg-block">
               <div class="contactNumber">
-                  <span>017-1729-5256</span>
-                </div>
+                <span>017-1729-5256</span>
+              </div>
             </b-navbar-brand>
           </b-collapse>
         </transition>
@@ -146,7 +149,7 @@ export default {
 }
 .navBarStyle {
   padding: 0px 0px;
-  position:relative;
+  position: relative;
   justify-content: center;
 }
 .fixed {
@@ -154,9 +157,18 @@ export default {
   left: 0px;
   top: 0px;
   width: 100%;
-  background: #252525;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  background: #399090;
+  box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%);
   z-index: 11111111111;
+}
+.menuItemStyle {
+  border-top: 1px solid #5eaaa8;
+}
+.menuItemStyle:hover {
+  background: #056676;
+}
+.menuItemStyle2 {
+  border-bottom: 1px solid #5eaaa8;
 }
 .menuItem {
   color: white;
@@ -170,17 +182,17 @@ export default {
   background-color: transparent;
   color: aqua;
 }
-.contactNumber{
-      background:#128b67;
-      color: white ;
-    padding: 8px 12px;
-    font-size: 24px;
-    font-weight: 700;
-    box-shadow: 0 3px 12.35px 0.65px rgba(0, 0, 0, 0.1);
+.contactNumber {
+  background: #056676;
+  color: white;
+  padding: 6px 8px;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
 }
-.toggleIconStyle{
+.toggleIconStyle {
   position: absolute;
-  top: 20px;
+  top: 38px;
   right: 0;
 }
 .toggleIcon {
@@ -189,7 +201,7 @@ export default {
   cursor: pointer;
 }
 .collapseBg {
-  background: #252525;
+  background: #399090;
   text-align: center;
 }
 .navbar-light .navbar-toggler {
@@ -211,6 +223,15 @@ export default {
   }
   .collapseBg {
     background: transparent;
+  }
+  .menuItemStyle {
+    border-top: 0px;
+  }
+  .menuItemStyle:hover {
+    background: none;
+  }
+  .menuItemStyle2 {
+    border-bottom: 0px;
   }
 }
 

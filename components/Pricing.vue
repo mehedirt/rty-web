@@ -61,6 +61,11 @@
 <script type="text/javascript">
 export default {
   components: {},
+  data() {
+    return {
+      text: ""
+    }
+  }
 };
 </script>
 

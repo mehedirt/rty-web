@@ -2,7 +2,7 @@
   <div class="ourWork">
     <div class>
       <b-container fluid="sm">
-        <div class="text-center hedlineContent pb-5">
+        <div class="text-center hedlineContent pb-5" data-aos="fade-up">
           <h2>Our Works</h2>
           <p>
             Some examples of the web design and development projects we are
@@ -17,8 +17,9 @@
             class="pb-4"
             md="6"
             lg="4"
+            data-aos="fade-up"
           >
-            <div class="pb-4">
+            <div class="pb-4" >
               <b-img
                 class
                 :src="work.image"
