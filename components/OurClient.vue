@@ -14,11 +14,11 @@
           <b-avatar class="caroselBody" size="3.5rem">
             <i class="fas fa-quote-left"></i>
           </b-avatar>
-          <b-card style="height:100%;">
+          <div class="carouselMessage">
             <p class="pt-3 clientMessage">{{client.message}}</p>
             <b-avatar :src="client.image" size="4.5rem"></b-avatar>
-            <span class="h4 pl-2">{{client.name}}</span>
-          </b-card>
+            <span class="clientTitle">{{client.name}}</span>
+          </div>
         </div>
       </carousel>
     </b-container>
@@ -72,7 +72,21 @@ export default {
   background: #ebf8fd;
   color:black;
 }
+.carouselMessage{
+  height: 100%;
+  box-shadow: 0px 0px 5px 1px rgb(152 179 179 / 50%);
+  background: white;
+  padding: 16px 8px 24px 16px;
+  border-radius: 10px 10px 0px 0px;
+}
 .clientMessage{
   min-height: 130px;
+  font-size: 18px;
+}
+.clientTitle{
+  font-size: 26px;
+  font-weight: 600;
+  color: #056676;
+  margin-left: 10px;
 }
 </style>

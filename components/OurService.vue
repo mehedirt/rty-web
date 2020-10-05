@@ -22,11 +22,11 @@
 </template>
 
 <script type="text/javascript">
-import serviceImage from "@/assets/images/icon/website.png";
-import serviceImage2 from "@/assets/images/icon/mobile2.png";
-import serviceImage3 from "@/assets/images/icon/sass.png";
-import serviceImage4 from "@/assets/images/icon/wordpress.png";
-import serviceImage5 from "@/assets/images/icon/ecom1.png";
+import serviceImage from "@/assets/images/icon/web.svg";
+import serviceImage2 from "@/assets/images/icon/mobile.svg";
+import serviceImage3 from "@/assets/images/icon/saas.svg";
+import serviceImage4 from "@/assets/images/icon/wordpress.svg";
+import serviceImage5 from "@/assets/images/icon/e-commerce.svg";
 export default {
   components:{
     

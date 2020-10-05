@@ -1,9 +1,9 @@
 <template>
-  <div class="footerBg bgColorLight">
+  <div class="footerBg bglight">
     <div class>
       <b-container fluid="sm">
-        <b-row>
-          <b-col class="mb-3" md="6" lg="3">
+        <b-row class="footerHeading">
+          <b-col class="mb-3" md="6" lg="4">
             <div class="text-light aboutSoft">
               <h5 class="pb-3">ABOUT SoftLab NY</h5>
               <p>We are continuously digitizing the world around us. We deliver world class customer experiences.</p>
@@ -24,7 +24,7 @@
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">E-Commerce Development</nuxt-link></div>
             </div>
           </b-col>
-          <b-col class="mb-3" md="6" lg="3">
+          <b-col class="mb-3" md="6" lg="2">
             <div class="text-light">
               <h5 class="pb-3">COMPANY</h5>
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">About Us</nuxt-link></div>
@@ -35,15 +35,17 @@
           </b-col>
           <b-col class="mb-3" md="6" lg="3">
             <div class="text-light ourMail">
-              <h5 class="pb-3">JOIN OUR EMAIL LIST</h5>
+              <h5 class="pb-3">JOIN WITH US</h5>
               <p>Get 10% OFF your next project when you signup. Check your inbox for details.</p>
-              <b-button block variant="primary" squared>GET STARTED</b-button>
+              <b-button class="getBtn" block squared>GET STARTED</b-button>
             </div>
           </b-col>
         </b-row>
-        <div class="pt-5" style="border-bottom: 1px solid white"></div>
+        <hr>
         <div class="text-light text-center pt-3">
-          <p>@2020 ReformedTech</p>
+          <div class="copyRight">
+            <p>&copy; 2020 <nuxt-link class="copyLink"  to="/">ReformedTech</nuxt-link>, All rights reserved.</p>
+          </div>
         </div>
       </b-container>
     </div>
@@ -75,5 +77,28 @@ export default {
   text-decoration: none;
   background-color: transparent;
   color: aqua;
+}
+.getBtn {
+  background: #056676;
+  padding: 0.5rem 1rem;
+  border-color: #056676;
+}
+.copyRight{
+  font-size: 18px;
+}
+.copyLink{
+  color:#e8ded2;
+  cursor: pointer;
+  font-size: 18px
+}
+
+.copyLink:hover { 
+  text-decoration: none;
+  background-color: transparent;
+  color: aqua;
+}
+.footerHeading h5{
+  font-size: 23px;
+  font-weight: 600;
 }
 </style>

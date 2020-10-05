@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="ourPricing bgColorLight">
+    <div class="ourPricing bglight">
       <b-container fluid="sm">
         <b-row class="text-light">
           <b-col class="align-self-center" md="12" lg="8">
@@ -48,7 +48,7 @@
             ></b-form-input>
           </b-col>
           <b-col>
-            <b-button class="py-2" block variant="primary" squared>
+            <b-button class="py-2 getBtn" block  squared>
               GET STARTED
             </b-button>
           </b-col>
@@ -74,19 +74,30 @@ export default {
  padding: 70px 0px;
 }
 .bgTextFeild {
- background: black;
+ /* background: rgba(3,24,24,0.18039); */
+ background: #a3d2ca;
 }
 .inputStyle {
   border-radius: 0;
   padding: 20px 10px;
-  color: black;
+  color: white;
   font-weight: 500;
+  background: #399090;
+  border: 1px solid #399090;
 }
 
 ::placeholder {
-  color: black;
+  color: white;
   font-weight: 500;
   text-transform: uppercase;
+}
+.getBtn{
+  background: #056676;
+  font-size: 1rem;
+  padding: 20px 10px;
+  border-color: #056676;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
 }
 .msgPrice {
   flex: 0 0 100%;

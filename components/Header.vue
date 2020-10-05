@@ -168,7 +168,7 @@ export default {
   background: #056676;
 }
 .menuItemStyle2 {
-  border-bottom: 1px solid #5eaaa8;
+  border-bottom: 2px solid #5eaaa8;
 }
 .menuItem {
   color: white;

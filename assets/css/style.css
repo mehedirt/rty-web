@@ -1,4 +1,15 @@
 
+
+
+:root{
+  --primaryColor: red;
+  --secondaryColor: gold;
+}
+
+
+
+
+
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -10,6 +21,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .bgColorLight{
   background: #252525;
+  /* color: var(--primaryColor) */
+}
+.bglight{
+  background: #399090;
 }
 .hedlineContent h2 {
   font-size: 40px;
@@ -32,12 +47,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .headerWrap {
-  width: 100%;
   min-height: 350px;
-  position: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: center  no-repeat;
+    background-size: cover;
 }
 .headerContent {
   padding: 150px 48px 0px 48px;

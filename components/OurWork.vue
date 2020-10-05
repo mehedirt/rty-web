@@ -10,27 +10,42 @@
             projects.
           </p>
         </div>
-        <b-row>
+        <b-row no-gutters>
           <b-col
             v-for="(work, index) in workData"
             :key="index"
-            class="pb-4"
-            md="6"
-            lg="4"
-            data-aos="fade-up"
+            md="12"
+            lg="6"
+            class="p-1"
           >
-            <div class="pb-4" >
+            <div class="workBody" data-aos="fade-up">
               <b-img
-                class
+                class="pb-4"
                 :src="work.image"
-                rounded
                 fluid
                 alt="Fluid image"
               ></b-img>
-            </div>
-            <div class="workContent">
-              <h4>{{ work.title }}</h4>
-              <p>{{ work.description }}</p>
+
+              <div class="workContent">
+                <h4>{{ work.title }}</h4>
+                <p>
+                  <template v-if="seeMore === index">{{
+                    work.description
+                  }}</template>
+                  <template v-else>{{
+                    work.description.substr(0, 150) + ""
+                  }}</template>
+                  <span
+                    class="seeMoreStyle"
+                    v-if="seeMore === index"
+                    @click="seeMore = null"
+                    >See Less</span
+                  >
+                  <span class="seeMoreStyle" v-else @click="seeMore = index"
+                    >...See More</span
+                  >
+                </p>
+              </div>
             </div>
           </b-col>
         </b-row>
@@ -48,6 +63,7 @@ import workImage5 from "@/assets/images/Lawlegal.png";
 import workImage6 from "@/assets/images/berly.png";
 export default {
   data: () => ({
+    seeMore: null,
     workData: [
       {
         image: workImage1,
@@ -94,15 +110,27 @@ export default {
 .ourWork {
   padding: 70px 0px;
 }
+.workBody {
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%);
+  height: 100%;
+}
 .workContent {
   text-align: center;
 }
 
 .workContent h4 {
   margin-bottom: 20px;
+  font-weight: 600;
+  color: #056676;
 }
 .workContent p {
   margin-bottom: 20px;
   font-size: 18px;
+}
+.seeMoreStyle {
+  color: #056676;
+  cursor: pointer;
+  font-weight: 500;
 }
 </style>
