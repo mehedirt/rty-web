@@ -8,7 +8,7 @@
 <script>
 import ContactHeader from '@/components/Contact/ContactHeader';
 import ContactBody from '@/components/Contact/ContactBody';
-import topImage from "@/assets/images/banner2.png";
+import topImage from "@/assets/images/header.svg";
 export default {
   components: {
       ContactHeader,

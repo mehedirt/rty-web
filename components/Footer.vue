@@ -3,7 +3,7 @@
     <div class>
       <b-container fluid="sm">
         <b-row class="footerHeading">
-          <b-col class="mb-3" md="6" lg="4">
+          <b-col class="mb-3" md="12" lg="6">
             <div class="text-light aboutSoft">
               <h5 class="pb-3">ABOUT SoftLab NY</h5>
               <p>We are continuously digitizing the world around us. We deliver world class customer experiences.</p>
@@ -14,7 +14,7 @@
               </div>
             </div>
           </b-col>
-          <b-col class="mb-3" md="6" lg="3">
+          <!-- <b-col class="mb-3" md="6" lg="3">
             <div class="text-light">
               <h5 class="pb-3">SERVICES</h5>
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">Web Development</nuxt-link></div>
@@ -23,13 +23,13 @@
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">WordPress Development</nuxt-link></div>
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">E-Commerce Development</nuxt-link></div>
             </div>
-          </b-col>
-          <b-col class="mb-3" md="6" lg="2">
+          </b-col> -->
+          <b-col class="mb-3" md="6" lg="3">
             <div class="text-light">
               <h5 class="pb-3">COMPANY</h5>
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">About Us</nuxt-link></div>
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">Contact Us</nuxt-link></div>
-              <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">Blog</nuxt-link></div>
+              <!-- <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">Blog</nuxt-link></div> -->
               <div class="mb-1"><i class="fas fa-chevron-right text-light pr-1"></i><nuxt-link class="menuItem" to="/">Careers</nuxt-link></div>
             </div>
           </b-col>

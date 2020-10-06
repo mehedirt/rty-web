@@ -2,7 +2,7 @@
   <div class="freeQuate bgColorDark">
       <b-container fluid="sm">
         <div class="text-center hedlineContent pb-5">
-          <h1>Send a Message</h1>
+          <h2>Send a Message</h2>
           <p>Interested in getting started?  Have a question?  We’re just an email away!</p>
         </div>
         <b-row class="justify-content-center no-gutters">
@@ -71,9 +71,8 @@
               </div>
             </div>
             <b-button
-              class="py-3 font-weight-bold text-uppercase"
+              class="submitBtn"
               block
-              variant="primary"
               squared
             >submit</b-button>
           </div>
@@ -121,6 +120,17 @@
 }
 .inputStyle {
   border-radius: 0;
+  color: black;
+  /* border-color: black; */
+}
+
+.submitBtn{
+  background: #056676;
+  font-size: 1.25rem;
+  padding: 0.6rem 1rem;
+  border-color: #056676;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 </style>

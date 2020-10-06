@@ -32,12 +32,12 @@
               <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/about">ABOUT</nuxt-link>
               </b-nav-item>
-              <b-nav-item class="menuItemStyle">
+              <!-- <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">PORTFOLIO</nuxt-link>
-              </b-nav-item>
-              <b-nav-item class="menuItemStyle">
+              </b-nav-item> -->
+              <!-- <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">BLOG</nuxt-link>
-              </b-nav-item>
+              </b-nav-item> -->
               <b-nav-item class="menuItemStyle menuItemStyle2">
                 <nuxt-link class="menuItem" to="/contact">CONTACT</nuxt-link>
               </b-nav-item>

@@ -8,7 +8,7 @@
 <script>
 import FreeQuate from '@/components/FreeQuate';
 import FreeQuateHeader from '@/components/FreeQuateHeader';
-import heroImage from "@/assets/images/banner2.png";
+import heroImage from "@/assets/images/header.svg";
 export default {
   components: {
      FreeQuate,

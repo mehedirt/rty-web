@@ -1,30 +1,31 @@
-
-
-
-:root{
+:root {
   --primaryColor: red;
   --secondaryColor: gold;
 }
 
-
-
-
-
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
-.bgColorDark{
+.bgColorDark {
   background: #ebf8fd;
 }
-.bgColorLight{
+.bgColorLight {
   background: #252525;
   /* color: var(--primaryColor) */
 }
-.bglight{
+.bglight {
   background: #399090;
+}
+.bgDark{
+  background: #056676 ;
 }
 .hedlineContent h2 {
   font-size: 40px;
@@ -35,6 +36,23 @@ h1, h2, h3, h4, h5, h6{
 .hedlineContent p {
   font-size: 20px;
   line-height: 30px;
+}
+
+.bodyContent h4{
+  margin-bottom: 16px;
+  color: #056676;
+  font-weight: 600;
+  font-size: 28px;
+}
+.bodyContent h5{
+  font-size: 20px;
+    font-weight: 500;
+}
+
+.bodyContent p{
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
 }
 @media screen and (max-width: 768px) {
   .hedlineContent h2 {
@@ -48,8 +66,8 @@ h1, h2, h3, h4, h5, h6{
 
 .headerWrap {
   min-height: 350px;
-  background: center  no-repeat;
-    background-size: cover;
+  background: center 47% no-repeat;
+  background-size: cover;
 }
 .headerContent {
   padding: 150px 48px 0px 48px;
@@ -67,15 +85,18 @@ h1, h2, h3, h4, h5, h6{
   color: aqua;
 }
 
-
-
-
-
-
-
-
-
-
+.form-control:focus {
+  box-shadow: none;
+}
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: none;
+}
+.custom-select:focus {
+  border-color: #399090;
+  outline: 0;
+  box-shadow: none;
+}
 
 /* ::placeholder {
   color: black !important;

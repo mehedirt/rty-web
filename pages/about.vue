@@ -8,8 +8,8 @@
 <script>
 import AboutHeader from '@/components/About/AboutHeader';
 import AboutBody from '@/components/About/AboutBody';
-import aboutImage from "@/assets/images/about-us.jpeg";
-import heroImage from "@/assets/images/Page2.svg";
+import aboutImage from "@/assets/images/undraw_code_review_l1q9.svg";
+import heroImage from "@/assets/images/header.svg";
 export default {
   components: {
       AboutHeader, 

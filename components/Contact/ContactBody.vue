@@ -2,17 +2,17 @@
   <div class="contactBody">
     <b-container fluid="sm">
       <div class="text-center hedlineContent pb-5">
-        <h1>Get in Touch</h1>
+        <h2>Get in Touch</h2>
         <p>Drop us a message and we will get back to you</p>
       </div>
       <b-row class="justify-content-center no-gutters">
         <b-col md="10" lg="5">
-          <div class="addressContent">
-            <h3 class="pb-3">Reach Us</h3>
+          <div class="bodyContent addressContent">
+            <h4 class="pb-3">Reach Us</h4>
             <div>
               <b-media class="pb-3">
                 <template v-slot:aside>
-                  <b-avatar size="2em" icon="star-fill">
+                  <b-avatar size="2em" class="bgDark">
                     <i class="fas fa-map-marker-alt"></i>
                   </b-avatar>
                 </template>
@@ -21,7 +21,7 @@
               </b-media>
               <b-media class="pb-3">
                 <template v-slot:aside>
-                  <b-avatar size="2em" icon="star-fill">
+                  <b-avatar size="2em" class="bgDark">
                     <i class="fas fa-phone"></i>
                   </b-avatar>
                 </template>
@@ -29,7 +29,7 @@
               </b-media>
               <b-media class="pb-3">
                 <template v-slot:aside>
-                  <b-avatar size="2em" icon="star-fill">
+                  <b-avatar size="2em" class="bgDark">
                     <i class="fas fa-paper-plane"></i>
                   </b-avatar>
                 </template>
@@ -37,7 +37,7 @@
               </b-media>
               <b-media class>
                 <template v-slot:aside>
-                  <b-avatar size="2em" icon="star-fill">
+                  <b-avatar size="2em" class="bgDark">
                     <i class="fas fa-globe-asia"></i>
                   </b-avatar>
                 </template>
@@ -47,45 +47,29 @@
           </div>
         </b-col>
         <b-col md="10" lg="7">
-          <div class="messageContent">
-            <!-- <h3 class="pb-3">Say Something</h3> -->
+          <div class="messageContent bglight">
             <div class="input-group flex-nowrap mt-4">
               <div class="w-100">
-                <input
-                  type="text"
-                  class="form-control inputStyle mb-3"
+                <b-form-input
+                  class="mb-3 inputStyle"
                   placeholder="Your Name"
-                  aria-label="Username"
-                  aria-describedby="addon-wrapping"
-                />
-                <input
-                  type="text"
-                  class="form-control inputStyle mb-3"
+                ></b-form-input>
+                <b-form-input
+                  class="mb-3 inputStyle"
                   placeholder="Email Address"
-                  aria-label="Emailaddress"
-                  aria-describedby="addon-wrapping"
-                />
-                <input
-                  type="text"
-                  class="form-control inputStyle mb-3"
+                ></b-form-input>
+                <b-form-input
+                  class="mb-3 inputStyle"
                   placeholder="Phone Number"
-                  aria-label="Phonenumber"
-                  aria-describedby="addon-wrapping"
-                  
-                />
-                <textarea
+                ></b-form-input>
+                <b-form-textarea
                   placeholder="Say Something..."
-                  rows="3"
-                  class="form-control inputStyle mb-3"
-                ></textarea>
+                  rows="3 "
+                  class="inputStyle mb-3"
+                ></b-form-textarea>
               </div>
             </div>
-            <b-button
-              class="py-3 font-weight-bold text-uppercase"
-              block
-              variant="primary"
-              squared
-            >send message</b-button>
+            <b-button class="getBtn" block squared>send message</b-button>
           </div>
         </b-col>
       </b-row>
@@ -104,12 +88,7 @@ export default {
   background: #ebf8fd;
   padding: 70px 0px;
 }
-.hedlineContent h1 {
-  font-size: 48px;
-}
-.hedlineContent p {
-  font-size: 25px;
-}
+
 .addressContent {
   background: white;
   padding: 24px 24px 24px 24px;
@@ -117,13 +96,29 @@ export default {
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
 }
 .messageContent {
-  background: #6c757d;
   padding: 8px 24px 24px 24px;
   height: 100%;
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
 }
+.getBtn {
+  background: #056676;
+  font-size: 1.2rem;
+  padding: 0.9rem 1rem;
+  border-color: #056676;
+  text-transform: uppercase;
+}
+
 .inputStyle {
   border-radius: 0;
-  padding: 30px 10px;
+  background: rgba(163, 210, 202, 0.1098);
+  color: white;
+  padding: 1.8rem 1rem;
+  font-size: 1.2rem;
+  border-color: #056676;
+}
+::placeholder {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 </style>
