@@ -9,7 +9,7 @@
         <!-- <span></span> -->
         <b-navbar-brand class="mr-0" href="#">
           <div class="text-light text-center">
-            <h2>SoftLab.NY</h2>
+            <b-img style="height: 50px;" :src="heroImage"   fluid></b-img>
           </div>
           <div class="contactNumber d-block d-lg-none">
             <span>017-1729-5256</span>
@@ -32,9 +32,9 @@
               <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/about">ABOUT</nuxt-link>
               </b-nav-item>
-              <!-- <b-nav-item class="menuItemStyle">
-                <nuxt-link class="menuItem" to="/">PORTFOLIO</nuxt-link>
-              </b-nav-item> -->
+              <b-nav-item class="menuItemStyle">
+                <nuxt-link class="menuItem" to="/pricing">PRICING</nuxt-link>
+              </b-nav-item>
               <!-- <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">BLOG</nuxt-link>
               </b-nav-item> -->
@@ -55,7 +55,7 @@
 </template>  
 
 <script type="text/javascript">
-import heroImage from "@/assets/images/ban6.jpeg";
+import heroImage from "@/assets/images/slogo1.png";
 export default {
   data: () => ({
     heroImage: heroImage,

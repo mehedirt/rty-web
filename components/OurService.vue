@@ -77,7 +77,7 @@ export default {
   padding: 16px 8px 24px 8px;
   text-align: center;
   height: 100%;
-      box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
 }
 .serviceContent h4{
   margin-bottom: 20px;
