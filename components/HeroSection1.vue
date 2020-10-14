@@ -54,7 +54,7 @@ export default {
 .heroHeading h2 {
   font-size: 3.5rem;
   font-weight: 500;
-  line-height: 1.3em;
+  line-height: 1.35em;
   text-align: right;
   color: white;
 }
