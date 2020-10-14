@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroSection/>
+    <HeroSection1/>
     <OurService/>
     <OurWork/>
     <Pricing/>
@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import HeroSection from '@/components/HeroSection';
+import HeroSection1 from '@/components/HeroSection1';
 import OurService from '@/components/OurService';
 import OurWork from '@/components/OurWork';
 import OurClient from '@/components/OurClient';
 import Pricing from '@/components/Pricing';
 export default {
   components: {
-      HeroSection,
+      HeroSection1,
       OurService,
       OurWork,
       OurClient,

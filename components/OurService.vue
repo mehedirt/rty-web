@@ -1,15 +1,20 @@
 <template>
-  <div class="ourService bgColorDark">
+  <div class="ourService">
       <b-container fluid="sm">
-        <div data-aos="fade-up" class="text-center hedlineContent pb-5">
+        <div data-aos="fade-up" v-if="false" class="hedlineContent pb-5">
           <h2>Our Services</h2>
           <p>Whether you’re in need of a website, mobile app or graphic design, Queens Web Design has all of your web and digital creative needs covered.</p>
         </div>
-        <b-row class="justify-content-center no-gutters">
-          <b-col data-aos="fade-up" v-for="(service,index) in serviceData" :key="index" class="p-1 " md="6" lg="4">
+        <b-row class="justify-content-center">
+          <b-col>
+            <div class="hedlineContent">
+          <h2 class="pb-3">Our Services</h2>
+          <p>Whether you’re in need of a website, mobile app or graphic design, Queens Web Design has all of your web and digital creative needs covered.</p>
+        </div>
+          </b-col>
+          <b-col data-aos="fade-up" v-for="(service,index) in serviceData" :key="index" class=" mb-4" md="6" lg="4">
               <div class="serviceContent">
-                <b-img style="height: 120px;" class="my-4" :src="service.icon"   fluid alt="Responsive image"></b-img>
-              <!-- <i :class="service.icon" class="display-2"></i> -->
+                <b-img style="height: 50px;" class="my-4" :src="service.icon"   fluid alt="Responsive image"></b-img>
               <h4>{{service.title}}</h4>
               <p>{{service.description}}</p>
               <b-button class="quateBtn" squared variant="outline" to="/getting-started">Get a FREE Quate</b-button>
@@ -74,10 +79,11 @@ export default {
 }
 .serviceContent {
   background: white;
-  padding: 16px 8px 24px 8px;
-  text-align: center;
+  padding: 16px 16px 24px 16px;
+  /* text-align: center; */
   height: 100%;
-  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  box-shadow: 0px 0px 10px 0px rgb(122 166 173 / 15%);
+  border-radius: 4px;
 }
 .serviceContent h4{
   margin-bottom: 20px;

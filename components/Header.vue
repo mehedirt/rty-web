@@ -185,10 +185,11 @@ export default {
 .contactNumber {
   background: #056676;
   color: white;
-  padding: 6px 8px;
+  padding: 8px 11px;
   font-size: 24px;
   font-weight: 700;
   box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  border-radius: 4px;
 }
 .toggleIconStyle {
   position: absolute;
