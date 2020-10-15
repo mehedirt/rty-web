@@ -1,8 +1,8 @@
 <template>
-  <div class="ourWork">
+  <div class="ourWork bgColorDark">
     <div class>
       <b-container fluid="sm">
-        <div class="text-center hedlineContent pb-5" data-aos="fade-up">
+        <div class="hedlineContent pb-5" data-aos="fade-up">
           <h2>Our Works</h2>
           <p>
             Some examples of the web design and development projects we are
@@ -111,12 +111,14 @@ export default {
   padding: 70px 0px;
 }
 .workBody {
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%);
   height: 100%;
+  background: white;
+  border-radius: 10px;
 }
 .workContent {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .workContent h4 {

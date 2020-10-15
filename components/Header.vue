@@ -43,7 +43,7 @@
               </b-nav-item>
             </b-navbar-nav>
             <b-navbar-brand href="#" class="d-none d-lg-block">
-              <div class="contactNumber">
+              <div class="contactNumber btnBrand">
                 <span>017-1729-5256</span>
               </div>
             </b-navbar-brand>
@@ -183,7 +183,7 @@ export default {
   color: aqua;
 }
 .contactNumber {
-  background: #056676;
+  /* background: #ff5722; */
   color: white;
   padding: 8px 11px;
   font-size: 24px;

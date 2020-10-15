@@ -1,28 +1,53 @@
 <template>
   <div class="ourService">
-      <b-container fluid="sm">
-        <div data-aos="fade-up" v-if="false" class="hedlineContent pb-5">
-          <h2>Our Services</h2>
-          <p>Whether you’re in need of a website, mobile app or graphic design, Queens Web Design has all of your web and digital creative needs covered.</p>
-        </div>
-        <b-row class="justify-content-center">
-          <b-col>
-            <div class="hedlineContent">
-          <h2 class="pb-3">Our Services</h2>
-          <p>Whether you’re in need of a website, mobile app or graphic design, Queens Web Design has all of your web and digital creative needs covered.</p>
-        </div>
-          </b-col>
-          <b-col data-aos="fade-up" v-for="(service,index) in serviceData" :key="index" class=" mb-4" md="6" lg="4">
-              <div class="serviceContent">
-                <b-img style="height: 50px;" class="my-4" :src="service.icon"   fluid alt="Responsive image"></b-img>
-              <h4>{{service.title}}</h4>
-              <p>{{service.description}}</p>
-              <b-button class="quateBtn" squared variant="outline" to="/getting-started">Get a FREE Quate</b-button>
-              </div>
+    <b-container fluid="sm">
+      <div data-aos="fade-up" v-if="false" class="hedlineContent pb-5">
+        <h2>Our Services</h2>
+        <p>
+          Whether you’re in need of a website, mobile app or graphic design,
+          Queens Web Design has all of your web and digital creative needs
+          covered.
+        </p>
+      </div>
+      <b-row class="justify-content-center">
+        <b-col>
+          <div class="hedlineContent">
+            <h2 class="pb-3">Our Services</h2>
+            <p>
+              Whether you’re in need of a website, mobile app or graphic design,
+              SoftLab has all of your web and digital creative needs covered.
+            </p>
+          </div>
+        </b-col>
+        <b-col
+          data-aos="fade-up"
+          v-for="(service, index) in serviceData"
+          :key="index"
+          class="mb-4"
+          md="6"
+          lg="4"
+        >
+          <div class="serviceContent">
+            <b-img
+              style="height: 50px"
+              class="my-4"
+              :src="service.icon"
+              fluid
+              alt="Responsive image"
+            ></b-img>
+            <h4>{{ service.title }}</h4>
+            <p>{{ service.description }}</p>
+            <b-button
+              class="quateBtn"
               
-          </b-col>
-        </b-row>
-      </b-container>
+              variant="outline"
+              to="/getting-started"
+              >Get a FREE Quate</b-button
+            >
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -33,9 +58,7 @@ import serviceImage3 from "@/assets/images/icon/saas.svg";
 import serviceImage4 from "@/assets/images/icon/wordpress.svg";
 import serviceImage5 from "@/assets/images/icon/e-commerce.svg";
 export default {
-  components:{
-    
-  },
+  components: {},
   data: () => ({
     serviceData: [
       {
@@ -82,24 +105,25 @@ export default {
   padding: 16px 16px 24px 16px;
   /* text-align: center; */
   height: 100%;
-  box-shadow: 0px 0px 10px 0px rgb(122 166 173 / 15%);
-  border-radius: 4px;
+  /* box-shadow: 0px 0px 10px 0px rgb(122 166 173 / 15%); */
+  box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%);
+  border-radius: 10px;
 }
-.serviceContent h4{
+.serviceContent h4 {
   margin-bottom: 20px;
-  color: #056676;
+  color: black;
   font-weight: 600;
 }
-.serviceContent p{
+.serviceContent p {
   margin-bottom: 20px;
   font-size: 18px;
 }
-.quateBtn{
+.quateBtn {
   border-color: #056676;
   color: black;
   font-weight: 500;
 }
-.quateBtn:hover{
+.quateBtn:hover {
   background: #056676;
   color: white;
 }
