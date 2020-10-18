@@ -8,8 +8,9 @@
       >
         <!-- <span></span> -->
         <b-navbar-brand class="mr-0" href="#">
-          <div class="text-light text-center">
-            <b-img style="height: 50px;" :src="heroImage"   fluid></b-img>
+          <div class="text-center">
+            <span class="logoStyle">SoftLab</span>
+            <!-- <b-img style="height: 50px;" :src="heroImage"   fluid></b-img> -->
           </div>
           <div class="contactNumber d-block d-lg-none">
             <span>017-1729-5256</span>
@@ -151,15 +152,24 @@ export default {
   padding: 0px 0px;
   position: relative;
   justify-content: center;
+  font-weight: 700;
 }
 .fixed {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
-  background: #399090;
-  box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%);
+  background: white;
+
+  /* background: #399090; */
+  /* box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%); */
+  box-shadow: 0px 0px 10px 0px rgb(5 1 15 / 29%);
   z-index: 11111111111;
+}
+.logoStyle{
+  font-size: 40px;
+  color:#ff5722;
+  font-family: "Poppins", sans-serif;
 }
 .menuItemStyle {
   border-top: 1px solid #5eaaa8;
@@ -182,8 +192,11 @@ export default {
   background-color: transparent;
   color: aqua;
 }
+.fixed .menuItem {
+  color:black;
+}
 .contactNumber {
-  /* background: #ff5722; */
+  background:#ff5722;
   color: white;
   padding: 8px 11px;
   font-size: 24px;

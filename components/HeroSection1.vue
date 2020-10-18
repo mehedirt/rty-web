@@ -8,7 +8,7 @@
               <h1>Get a website for your business</h1>
               <h2>
                 Starting at
-                <span class="labelPrice badge colorPrimary">$399</span>
+                <span class="labelPrice badge badge-danger">$399</span>
               </h2>
               <div class="text-center pt-5">
                 <b-button variant="outline" class="getBtn btnBran">Get Started</b-button>
@@ -67,8 +67,10 @@ export default {
 .getBtn {
   font-size: 1.4rem;
   padding: 0.7rem 1.3rem;
-  font-weight: 500;
-  border: 1px solid #00bcd4;
-  color: #00bcd4;
+  font-weight: 600;
+  border: 1px solid #ff5722;
+  color: white;
+  background: #ff5722;
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
 }
 </style>

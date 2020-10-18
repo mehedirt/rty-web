@@ -111,7 +111,7 @@ export default {
 }
 .serviceContent h4 {
   margin-bottom: 20px;
-  color: black;
+  color: #14274e;
   font-weight: 600;
 }
 .serviceContent p {
@@ -119,12 +119,12 @@ export default {
   font-size: 18px;
 }
 .quateBtn {
-  border-color: #056676;
+  border-color: #14274e;
   color: black;
   font-weight: 500;
 }
 .quateBtn:hover {
-  background: #056676;
+  background: #14274e;
   color: white;
 }
 </style>
