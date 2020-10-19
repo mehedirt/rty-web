@@ -69,15 +69,15 @@ export default {
   left: 15px;
   top: 0px;
   z-index: 100;
-  background: #ebf8fd;
-  color:black;
+  background: #F1F5F0;
+  color:#14274e;
 }
 .carouselMessage{
   height: 100%;
-  box-shadow: 0px 0px 5px 1px rgb(152 179 179 / 50%);
+  /* box-shadow: 0px 0px 5px 1px rgb(152 179 179 / 50%); */
   background: white;
   padding: 16px 8px 24px 16px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px ;
 }
 .clientMessage{
   min-height: 130px;
@@ -86,7 +86,7 @@ export default {
 .clientTitle{
   font-size: 26px;
   font-weight: 600;
-  color: #056676;
+  color: #14274e;
   margin-left: 10px;
 }
 </style>

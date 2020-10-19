@@ -1,7 +1,7 @@
 <template>
   <div class="ourService">
     <b-container fluid="sm">
-      <div data-aos="fade-up" v-if="false" class="hedlineContent pb-5">
+      <div v-if="false" class="hedlineContent pb-5">
         <h2>Our Services</h2>
         <p>
           Whether you’re in need of a website, mobile app or graphic design,
@@ -11,7 +11,7 @@
       </div>
       <b-row class="justify-content-center">
         <b-col>
-          <div class="hedlineContent">
+          <div class="hedlineContent hedlineAlignment">
             <h2 class="pb-3">Our Services</h2>
             <p>
               Whether you’re in need of a website, mobile app or graphic design,
@@ -20,7 +20,6 @@
           </div>
         </b-col>
         <b-col
-          data-aos="fade-up"
           v-for="(service, index) in serviceData"
           :key="index"
           class="mb-4"
@@ -98,7 +97,10 @@ export default {
 
 <style scoped>
 .ourService {
-  padding: 70px 0px;
+  padding: 100px 0px;
+}
+.hedlineAlignment{
+  padding-top: 34px;
 }
 .serviceContent {
   background: white;
@@ -106,8 +108,15 @@ export default {
   /* text-align: center; */
   height: 100%;
   /* box-shadow: 0px 0px 10px 0px rgb(122 166 173 / 15%); */
-  box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%);
+  /* box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%); */
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
+  box-shadow: 1px 1px 4px 0px rgb(19 1 60 / 65%);
+ 
+   transition: transform 200ms cubic-bezier(0.65, 0.94, 1, 1);
   border-radius: 10px;
+}
+.serviceContent:hover{
+  transform: scale(1.1);
 }
 .serviceContent h4 {
   margin-bottom: 20px;

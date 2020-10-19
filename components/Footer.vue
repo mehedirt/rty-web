@@ -1,5 +1,5 @@
 <template>
-  <div class="footerBg bglight">
+  <div class="footerBg bgDark">
     <div class>
       <b-container fluid="sm">
         <b-row class="footerHeading">
@@ -76,18 +76,18 @@ export default {
 .menuItem:hover {
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: #ff5722;
 }
 .getBtn {
-  background: #056676;
+  background: #ff5722;
   padding: 0.5rem 1rem;
-  border-color: #056676;
+  border-color: #ff5722;
 }
 .copyRight{
   font-size: 18px;
 }
 .copyLink{
-  color:#e8ded2;
+  color:#ff5722;
   cursor: pointer;
   font-size: 18px
 }
@@ -95,7 +95,7 @@ export default {
 .copyLink:hover { 
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: white;
 }
 .footerHeading h5{
   font-size: 23px;

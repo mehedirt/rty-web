@@ -8,10 +8,10 @@
               <h1>Get a website for your business</h1>
               <h2>
                 Starting at
-                <span class="labelPrice badge badge-danger">$399</span>
+                <span class="labelPrice badge ">$399</span>
               </h2>
               <div class="text-center pt-5">
-                <b-button variant="outline" class="getBtn btnBran">Get Started</b-button>
+                <b-button variant="outline" class="getBtn">Get Started</b-button>
               </div>
             </div>
           </div>
@@ -35,6 +35,8 @@ export default {
   padding: 180px 0px 90px 0px;
 }
 .labelPrice {
+  background: #14274ea1;
+  font-size: 50px;
 }
 .heroHeading {
   width: 650px;
@@ -66,11 +68,16 @@ export default {
 }
 .getBtn {
   font-size: 1.4rem;
-  padding: 0.7rem 1.3rem;
+  padding: 0.6rem 1.3rem;
   font-weight: 600;
   border: 1px solid #ff5722;
   color: white;
   background: #ff5722;
   /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
+}
+.getBtn:hover{
+  background:#14274e;
+  color:#ff5722;
+   border: 1px solid #14274e;
 }
 </style>

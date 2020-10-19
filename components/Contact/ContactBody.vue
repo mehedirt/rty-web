@@ -1,5 +1,5 @@
 <template>
-  <div class="contactBody">
+  <div class="contactBody bgColorDark">
     <b-container fluid="sm">
       <div class="text-center hedlineContent pb-5">
         <h2>Get in Touch</h2>
@@ -7,8 +7,8 @@
       </div>
       <b-row class="justify-content-center no-gutters">
         <b-col md="10" lg="5">
-          <div class="bodyContent addressContent">
-            <h4 class="pb-3">Reach Us</h4>
+          <div class="bodyContent addressContent d-flex align-items-center">
+            <!-- <h4 class="pb-3">Reach Us</h4> -->
             <div>
               <b-media class="pb-3">
                 <template v-slot:aside>
@@ -16,7 +16,6 @@
                     <i class="fas fa-map-marker-alt"></i>
                   </b-avatar>
                 </template>
-                <h5 class>ReformedTech</h5>
                 <h5>House: 32/1, Road: 3, Shyamoli, Dhaka.</h5>
               </b-media>
               <b-media class="pb-3">
@@ -47,7 +46,7 @@
           </div>
         </b-col>
         <b-col md="10" lg="7">
-          <div class="messageContent bglight">
+          <div class="messageContent bgDark">
             <div class="input-group flex-nowrap mt-4">
               <div class="w-100">
                 <b-form-input
@@ -85,8 +84,8 @@ export default {
 
 <style  scoped>
 .contactBody {
-  background: #ebf8fd;
-  padding: 70px 0px;
+  /* background: #ebf8fd; */
+  padding: 100px 0px;
 }
 
 .addressContent {
@@ -95,29 +94,32 @@ export default {
   height: 100%;
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
 }
+.addressContent h4{
+ color: #14274e;
+}
 .messageContent {
   padding: 8px 24px 24px 24px;
   height: 100%;
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
 }
 .getBtn {
-  background: #056676;
+  background: #ff5722;
   font-size: 1.2rem;
   padding: 0.9rem 1rem;
-  border-color: #056676;
+  border-color: #ff5722;
   text-transform: uppercase;
 }
 
 .inputStyle {
   border-radius: 0;
-  background: rgba(163, 210, 202, 0.1098);
+  background: #394867;
   color: white;
   padding: 1.8rem 1rem;
   font-size: 1.2rem;
-  border-color: #056676;
+  border-color: #394867;
 }
 ::placeholder {
-  color: white;
+  color: #f1f6f9;
   font-size: 1.2rem;
   text-transform: uppercase;
 }

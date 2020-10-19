@@ -125,10 +125,10 @@
 }
 
 .submitBtn{
-  background: #056676;
+  background: #ff5722;
   font-size: 1.25rem;
   padding: 0.6rem 1rem;
-  border-color: #056676;
+  border-color: #ff5722;
   text-transform: uppercase;
   font-weight: 500;
 }

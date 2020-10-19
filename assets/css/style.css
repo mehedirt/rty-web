@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'AquireBold';
+  src: url('AquireBold-8Ma60.otf') format("opentype"); 
+}
 :root {
   --primaryColor: red;
   --secondaryColor: gold;
@@ -15,9 +19,12 @@ h6 {
   /* font-family: "Poppins", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
+hr{
+  background: #394867;
+}
 
 .bgColorDark {
-  background: #F0F2F5;
+  background: #F1F5F0;
 }
 .bgColorLight {
   background: #252525;
@@ -28,14 +35,21 @@ h6 {
   background: #399090;
 }
 .bgDark{
-  background: #056676 ;
+  background: #14274e ;
+
 }
 .textBrand{
-  color:#056676;
+  color:#14274e;
 }
 .btnBrand{
-  background: #00bcd4;
-  border-color: #00bcd4;
+  background: #ff5722;
+  border-color: #ff5722;
+  
+}
+
+.btnBrand:hover{
+  background: #ff5722;
+  border-color: #ff5722;
 }
 .colorPrimary{
   background: #ff5722;
@@ -81,6 +95,7 @@ h6 {
   min-height: 350px;
   background: center 47% no-repeat;
   background-size: cover;
+  /* background: #14274e; */
 }
 .headerContent {
   padding: 150px 48px 0px 48px;
@@ -98,7 +113,7 @@ h6 {
 .headerMenu:hover {
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: #ff5722;
 }
 
 .form-control:focus {

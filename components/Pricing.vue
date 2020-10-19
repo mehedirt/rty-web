@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="ourPricing bglight">
+    <div class="ourPricing bgDark">
       <b-container fluid="sm">
         <b-row class="text-light">
           <b-col class="align-self-center" md="12" lg="8">
@@ -22,28 +22,28 @@
           <b-col class="msgPrice">
             <b-form-input
               class="inputStyle mb-3 mb-lg-0"
-              v-model="text"
+
               placeholder="Your Name"
             ></b-form-input>
           </b-col>
           <b-col class="msgPrice">
             <b-form-input
               class="inputStyle mb-3 mb-lg-0"
-              v-model="text"
+
               placeholder="Company Name"
             ></b-form-input>
           </b-col>
           <b-col class="msgPrice">
             <b-form-input
               class="inputStyle mb-3 mb-lg-0"
-              v-model="text"
+
               placeholder="Your Email"
             ></b-form-input>
           </b-col>
           <b-col class="msgPrice">
             <b-form-input
               class="inputStyle mb-3 mb-lg-0"
-              v-model="text"
+
               placeholder="Your Phone"
             ></b-form-input>
           </b-col>
@@ -75,29 +75,29 @@ export default {
 }
 .bgTextFeild {
  /* background: rgba(3,24,24,0.18039); */
- background: #a3d2ca;
+ background: #F1F5F0;
 }
 .inputStyle {
   border-radius: 0;
   padding: 20px 10px;
   color: white;
   font-weight: 500;
-  background: #399090;
-  border: 1px solid #399090;
+  background: #14274e;
+  border: 1px solid #14274e;
 }
 
 ::placeholder {
-  color: white;
+  color: #F1F5F0;
   font-weight: 500;
   text-transform: uppercase;
 }
 .getBtn{
-  background: #056676;
+  background: #ff5722;
   font-size: 1rem;
   padding: 20px 10px;
-  border-color: #056676;
+  border-color: #ff5722;
   font-weight: 500;
-  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
 }
 .msgPrice {
   flex: 0 0 100%;

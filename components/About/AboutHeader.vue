@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="headerWrap" :style="`background-image: url(`+heroImage+`);`">
+    <div class="headerWrap" :style="`background-image: url(`+heroImage+`);`" >
       <div class="headerContent">
         <b-container fluid>
           <div class="text-center text-light">

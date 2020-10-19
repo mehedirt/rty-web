@@ -44,7 +44,7 @@
               </b-nav-item>
             </b-navbar-nav>
             <b-navbar-brand href="#" class="d-none d-lg-block">
-              <div class="contactNumber btnBrand">
+              <div class="contactNumber">
                 <span>017-1729-5256</span>
               </div>
             </b-navbar-brand>
@@ -159,17 +159,18 @@ export default {
   left: 0px;
   top: 0px;
   width: 100%;
-  background: white;
+  background: #14274e;
 
   /* background: #399090; */
   /* box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%); */
-  box-shadow: 0px 0px 10px 0px rgb(5 1 15 / 29%);
+  /* box-shadow: 0px 0px 10px 0px rgb(5 1 15 / 29%); */
+   box-shadow: 1px 0px 4px 4px rgb(19 1 60 / 65%);
   z-index: 11111111111;
 }
 .logoStyle{
   font-size: 40px;
   color:#ff5722;
-  font-family: "Poppins", sans-serif;
+  font-family: "AquireBold", sans-serif;
 }
 .menuItemStyle {
   border-top: 1px solid #5eaaa8;
@@ -190,19 +191,19 @@ export default {
 .menuItem:hover {
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: #ff5722;
 }
 .fixed .menuItem {
-  color:black;
+  /* color:black; */
 }
 .contactNumber {
   background:#ff5722;
   color: white;
-  padding: 8px 11px;
+  padding: 8px 10px;
   font-size: 24px;
   font-weight: 700;
-  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
-  border-radius: 4px;
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  border-radius: 4px; */
 }
 .toggleIconStyle {
   position: absolute;

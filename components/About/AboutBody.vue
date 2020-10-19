@@ -2,13 +2,13 @@
   <div>
     <div class="aboutBody">
       <b-container fluid="sm">
-        <div data-aos="fade-up" class="text-center hedlineContent pb-5">
+        <div  class="text-center hedlineContent pb-5">
           <h2>A journy with SoftLab</h2>
           <p>We shine when our clients do</p>
         </div>
         <b-row class="justify-content-center" >
           <b-col class="d-flex align-items-center" md="12" lg="6">
-            <b-img data-aos="fade-right"
+            <b-img 
               class="mb-5"
               :src="aboutImage"
               rounded
@@ -17,9 +17,9 @@
             ></b-img>
           </b-col>
           <b-col md="12" lg="6">
-            <div data-aos="fade-left" class="bodyContent">
+            <div  class="bodyContent">
               <h4>Who we are</h4>
-              <hr />
+          
               <p>
                 Team SoftLab is a combination of software developers, technical
                 experts and artistic designers who are working relentlessly and
@@ -30,7 +30,7 @@
                 commitment is the core value of our work.
               </p>
               <h4>Industries we serve</h4>
-              <hr />
+         
               <p>
                 SoftLab has been serving many clients around the world with
                 amazing expertise in development, design & maintenance. With
@@ -45,7 +45,7 @@
         </b-row>
       </b-container>
     </div>
-    <div class="aboutBody1">
+    <div class="aboutBody1 bgColorDark">
       <b-container fluid="sm">
         <b-row no-gutters>
           <b-col md="6" lg="3">
@@ -90,7 +90,7 @@ export default {
 
 <style  scoped>
 .aboutBody {
-  padding: 70px 0px;
+  padding: 100px 0px;
 }
 .aboutClient {
   height: 100%;
@@ -99,17 +99,29 @@ export default {
   padding: 40px 10px 15px;
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
 }
+.bodyContent h4{
+  margin-bottom: 20px;
+  color: #14274e;
+  font-weight: 600;
+}
+
+.bodyContent p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
 
 .aboutLight{
-  background:#399090 ;
+  /* background:#399090 ; */
+  background: #394867;
 }
 .aboutDark{
-  background:#056676 ;
+  /* background:#056676 ; */
+  background:#14274e ;
   
 }
 .aboutBody1 {
-  background: #ebf8fd;
-  padding: 70px 0px;
+
+  padding: 100px 0px;
 }
 .aboutClient h4{
   font-size: 40px;
