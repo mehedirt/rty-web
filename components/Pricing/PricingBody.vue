@@ -269,7 +269,7 @@ export default {
   transition: transform 200ms cubic-bezier(0.65, 0.94, 1, 1);
 }
 .exampleContent:hover{
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .exampleContent h4 {
   margin-bottom: 20px;

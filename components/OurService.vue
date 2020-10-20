@@ -116,7 +116,7 @@ export default {
   border-radius: 10px;
 }
 .serviceContent:hover{
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .serviceContent h4 {
   margin-bottom: 20px;

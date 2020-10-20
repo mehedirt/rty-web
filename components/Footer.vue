@@ -44,7 +44,7 @@
         <hr>
         <div class="text-light text-center pt-3">
           <div class="copyRight">
-            <p>&copy; 2020 <nuxt-link class="copyLink"  to="/">ReformedTech</nuxt-link>, All rights reserved.</p>
+            <p>&copy; 2020 <nuxt-link class="copyLink"  to="/">SoftLab</nuxt-link>, All rights reserved.</p>
           </div>
         </div>
       </b-container>

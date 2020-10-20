@@ -17,7 +17,7 @@
           </div>
         </b-navbar-brand>
         <span class="d-lg-none toggleIconStyle" @click="showToggleNavbar">
-          <i class="fas fa-bars toggleIcon pr-3"></i>
+          <i class="fas fa-bars toggleIcon pl-3"></i>
         </span>
         <transition name="slide">
           <b-collapse
@@ -39,7 +39,7 @@
               <!-- <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">BLOG</nuxt-link>
               </b-nav-item> -->
-              <b-nav-item class="menuItemStyle menuItemStyle2">
+              <b-nav-item class="menuItemStyl menuItemStyle2">
                 <nuxt-link class="menuItem" to="/contact">CONTACT</nuxt-link>
               </b-nav-item>
             </b-navbar-nav>
@@ -173,14 +173,14 @@ export default {
   font-family: "AquireBold", sans-serif;
 }
 .menuItemStyle {
-  border-top: 1px solid #5eaaa8;
+  border-bottom: 1px solid #5eaaa8;
 }
 .menuItemStyle:hover {
-  background: #056676;
+  /* background: #056676; */
 }
-.menuItemStyle2 {
+/* .menuItemStyle2 {
   border-bottom: 2px solid #5eaaa8;
-}
+} */
 .menuItem {
   color: white;
   font-size: 18px;
@@ -207,16 +207,16 @@ export default {
 }
 .toggleIconStyle {
   position: absolute;
-  top: 38px;
-  right: 0;
+  top: 50px;
+  left: 0;
 }
 .toggleIcon {
   color: white;
-  font-size: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .collapseBg {
-  background: #399090;
+  background: #14274e;
   text-align: center;
 }
 .navbar-light .navbar-toggler {
@@ -240,7 +240,7 @@ export default {
     background: transparent;
   }
   .menuItemStyle {
-    border-top: 0px;
+    border-bottom: 0px;
   }
   .menuItemStyle:hover {
     background: none;
