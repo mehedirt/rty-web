@@ -8,15 +8,16 @@
       >
         <!-- <span></span> -->
         <b-navbar-brand class="mr-0" href="#">
-          <div class="text-light text-center">
-            <b-img style="height: 50px;" :src="heroImage"   fluid></b-img>
+          <div class="text-center">
+            <span class="logoStyle">SoftLab</span>
+            <!-- <b-img style="height: 50px;" :src="heroImage"   fluid></b-img> -->
           </div>
           <div class="contactNumber d-block d-lg-none">
             <span>017-1729-5256</span>
           </div>
         </b-navbar-brand>
         <span class="d-lg-none toggleIconStyle" @click="showToggleNavbar">
-          <i class="fas fa-bars toggleIcon pr-3"></i>
+          <i class="fas fa-bars toggleIcon pl-3"></i>
         </span>
         <transition name="slide">
           <b-collapse
@@ -38,7 +39,7 @@
               <!-- <b-nav-item class="menuItemStyle">
                 <nuxt-link class="menuItem" to="/">BLOG</nuxt-link>
               </b-nav-item> -->
-              <b-nav-item class="menuItemStyle menuItemStyle2">
+              <b-nav-item class="menuItemStyl menuItemStyle2">
                 <nuxt-link class="menuItem" to="/contact">CONTACT</nuxt-link>
               </b-nav-item>
             </b-navbar-nav>
@@ -151,25 +152,35 @@ export default {
   padding: 0px 0px;
   position: relative;
   justify-content: center;
+  font-weight: 700;
 }
 .fixed {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
-  background: #399090;
-  box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%);
+  background: #14274e;
+
+  /* background: #399090; */
+  /* box-shadow: 0 2px 2px 0 rgb(29 111 110 / 53%); */
+  /* box-shadow: 0px 0px 10px 0px rgb(5 1 15 / 29%); */
+   box-shadow: 1px 0px 4px 4px rgb(19 1 60 / 65%);
   z-index: 11111111111;
 }
+.logoStyle{
+  font-size: 40px;
+  color:#ff5722;
+  font-family: "AquireBold", sans-serif;
+}
 .menuItemStyle {
-  border-top: 1px solid #5eaaa8;
+  border-bottom: 1px solid #5eaaa8;
 }
 .menuItemStyle:hover {
-  background: #056676;
+  /* background: #056676; */
 }
-.menuItemStyle2 {
+/* .menuItemStyle2 {
   border-bottom: 2px solid #5eaaa8;
-}
+} */
 .menuItem {
   color: white;
   font-size: 18px;
@@ -180,28 +191,32 @@ export default {
 .menuItem:hover {
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: #ff5722;
+}
+.fixed .menuItem {
+  /* color:black; */
 }
 .contactNumber {
-  background: #056676;
+  background:#ff5722;
   color: white;
-  padding: 6px 8px;
+  padding: 8px 10px;
   font-size: 24px;
   font-weight: 700;
-  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  border-radius: 4px; */
 }
 .toggleIconStyle {
   position: absolute;
-  top: 38px;
-  right: 0;
+  top: 50px;
+  left: 0;
 }
 .toggleIcon {
   color: white;
-  font-size: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .collapseBg {
-  background: #399090;
+  background: #14274e;
   text-align: center;
 }
 .navbar-light .navbar-toggler {
@@ -225,7 +240,7 @@ export default {
     background: transparent;
   }
   .menuItemStyle {
-    border-top: 0px;
+    border-bottom: 0px;
   }
   .menuItemStyle:hover {
     background: none;

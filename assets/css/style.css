@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'AquireBold';
+  src: url('AquireBold-8Ma60.otf') format("opentype"); 
+}
 :root {
   --primaryColor: red;
   --secondaryColor: gold;
@@ -12,11 +16,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+hr{
+  background: #394867;
 }
 
 .bgColorDark {
-  background: #ebf8fd;
+  background: #F1F5F0;
 }
 .bgColorLight {
   background: #252525;
@@ -27,19 +35,30 @@ h6 {
   background: #399090;
 }
 .bgDark{
-  background: #056676 ;
+  background: #14274e ;
+
 }
 .textBrand{
-  color:#056676;
+  color:#14274e;
 }
 .btnBrand{
-  background: #056676;
+  background: #ff5722;
+  border-color: #ff5722;
+  
+}
+
+.btnBrand:hover{
+  background: #ff5722;
+  border-color: #ff5722;
+}
+.colorPrimary{
+  background: #ff5722;
 }
 .hedlineContent h2 {
   font-size: 40px;
   text-transform: capitalize;
   font-weight: 600;
-  color: #056676;
+  color: #14274e;
 }
 .hedlineContent p {
   font-size: 20px;
@@ -48,7 +67,7 @@ h6 {
 
 .bodyContent h4{
   margin-bottom: 16px;
-  color: #056676;
+  color: black;
   font-weight: 600;
   font-size: 28px;
 }
@@ -76,6 +95,7 @@ h6 {
   min-height: 350px;
   background: center 47% no-repeat;
   background-size: cover;
+  /* background: #14274e; */
 }
 .headerContent {
   padding: 150px 48px 0px 48px;
@@ -93,7 +113,7 @@ h6 {
 .headerMenu:hover {
   text-decoration: none;
   background-color: transparent;
-  color: aqua;
+  color: #ff5722;
 }
 
 .form-control:focus {
@@ -109,8 +129,26 @@ h6 {
   box-shadow: none;
 }
 
-/* ::placeholder {
-  color: black !important;
-  font-weight: 500;
-  text-transform: uppercase;
-} */
+
+.heroBgImage{
+  background-image: url(../images/hero123.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position:center;
+  min-height: 80vh
+
+}
+
+.heroBgImage::before{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* background: rgba(57, 49, 49, 0.7); */
+  background: rgb(130 116 116 / 63%);;
+  width: 100%;
+  height: 100%;
+}
+  

@@ -1,8 +1,8 @@
 <template>
-  <div class="ourWork">
+  <div class="ourWork bgColorDark">
     <div class>
       <b-container fluid="sm">
-        <div class="text-center hedlineContent pb-5" data-aos="fade-up">
+        <div class="hedlineContent pb-5">
           <h2>Our Works</h2>
           <p>
             Some examples of the web design and development projects we are
@@ -10,21 +10,23 @@
             projects.
           </p>
         </div>
-        <b-row no-gutters>
+        <b-row>
           <b-col
             v-for="(work, index) in workData"
             :key="index"
             md="12"
-            lg="6"
-            class="p-1"
+            lg="4"
+            class="pb-4"
           >
-            <div class="workBody" data-aos="fade-up">
-              <b-img
+            <div class="workBody">
+              <div class="text-center">
+                <b-img style="height: 200px"
                 class="pb-4"
                 :src="work.image"
                 fluid
                 alt="Fluid image"
               ></b-img>
+              </div>
 
               <div class="workContent">
                 <h4>{{ work.title }}</h4>
@@ -108,28 +110,36 @@ export default {
 
 <style scoped>
 .ourWork {
-  padding: 70px 0px;
+  padding: 100px 0px;
 }
 .workBody {
-  padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%);
+  padding: 20px;
+  /* box-shadow: 0px 0px 10px 0px rgb(193 220 220 / 50%); */
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
+  box-shadow: 1px 1px 4px 0px rgb(19 1 60 / 65%);
   height: 100%;
+  background: white;
+  border-radius: 10px;
+  transition: transform 200ms cubic-bezier(0.65, 0.94, 1, 1);
+}
+.workBody:hover{
+  transform: scale(1.05);
 }
 .workContent {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .workContent h4 {
   margin-bottom: 20px;
   font-weight: 600;
-  color: #056676;
+  color: #14274e;
 }
 .workContent p {
   margin-bottom: 20px;
   font-size: 18px;
 }
 .seeMoreStyle {
-  color: #056676;
+   color: #14274e;
   cursor: pointer;
   font-weight: 500;
 }

@@ -69,7 +69,7 @@
                     </div>
                   </b-media-aside>
 
-                  <b-media-body class="pl-2">
+                  <b-media-body class="pl-4">
                     <h4>{{ example.title }}</h4>
                     <p>{{ example.description }}</p>
                   </b-media-body>
@@ -242,10 +242,10 @@ export default {
 <style scope>
 .pricingBody {
   /* background: #ebf8fd; */
-  padding: 70px 0px;
+  padding: 100px 0px;
 }
 .rowClass {
-  background: #056676;
+  background: #14274e;
   color: white;
   font-size: 22px;
 }
@@ -256,18 +256,24 @@ export default {
 }
 
 .pricingExample {
-  padding: 70px 0px;
+  padding: 100px 0px;
 }
 .exampleContent {
   background: white;
   padding: 24px 16px 24px 16px;
   /* text-align: center; */
   height: 100%;
-  box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%);
+  /* box-shadow: 0px 0px 10px 0px rgb(7 109 109 / 50%); */
+  box-shadow: 1px 1px 4px 0px rgb(19 1 60 / 65%);
+  border-radius: 10px;
+  transition: transform 200ms cubic-bezier(0.65, 0.94, 1, 1);
+}
+.exampleContent:hover{
+  transform: scale(1.04);
 }
 .exampleContent h4 {
   margin-bottom: 20px;
-  color: #056676;
+  color: #14274e;
   font-weight: 600;
 }
 .exampleContent p {
@@ -275,8 +281,9 @@ export default {
   font-size: 18px;
 }
 .priceStyle {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
+  color: #EE3900;
 }
 .durationStyle {
   font-size: 18px;
